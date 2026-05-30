@@ -12,6 +12,8 @@ import {
 const boxImages = boxImagesJson as Record<string, string>;
 const printedTotals = printedTotalsJson as Record<string, number>;
 
+// (yuyu-tei 크롤 제거됨 — 가격은 pricing.ts에서 카드별 hash로 추정)
+
 const RARITY_NORMALIZE: Record<string, string> = {
   "C": "C", "U": "U", "R": "R",
   "Double rare": "RR", "Double Rare": "RR",
@@ -82,9 +84,9 @@ export function enrichCards(setCode: string, cards: CardEntry[], releasedKR: boo
   const out: CardEnriched[] = [];
 
   for (const c of cards) {
-    const price = calcPrices(c.rarity, releaseDate);
-    const rank = rankRarity(c.rarity);
     const num = c.num as number;
+    const price = calcPrices(c.rarity, releaseDate, undefined, setCode, num, c.name);
+    const rank = rankRarity(c.rarity);
     const baseName = c.name || `#${num}`;
     const koName = toKoreanCardName(c.name);
 

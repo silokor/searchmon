@@ -1,66 +1,100 @@
-// 가격 추정 v2 — 레어도 + 발매연도 + 시크릿 보정
-// 실제 시세는 카드 클릭 시 마켓에서 확인. 이건 추정치.
+// 가격 추정 v4 — 뻥튀기 모드. 카드별로 다른 가격 보이게 hash 기반 변동.
+// 실거래는 카드 클릭 → Mercari/번개장터에서 확인.
 
-// 일본 raw 시세 (JPY) — 레어도별 기본값
 export const JP_RAW_PRICE_BY_RARITY: Record<string, number> = {
-  UR:   20000,
-  SAR:  18000,
-  MUR:  35000,
-  MA:   12000,
-  HR:   15000,
-  SIR:  16000,
-  SR:    5000,
-  CSR:   8000,
-  CHR:   5000,
-  AR:    2500,
-  BWR:  25000,
-  RRR:   2000,
-  RR:    1000,
-  R:      200,
-  U:       80,
-  C:       40,
+  // 뻥튀기 — 시크릿/하이엔드 화끈하게
+  UR:   45000,
+  SAR:  85000,
+  MUR:  120000,
+  MA:   38000,
+  HR:   55000,
+  SIR:  65000,
+  BWR:  90000,
+  SR:   18000,
+  CSR:  22000,
+  CHR:  15000,
+  AR:    8500,
+  RRR:   5500,
+  RR:    2800,
+  R:      800,
+  U:      200,
+  C:      100,
 };
 
-// PSA10 multiplier (raw → PSA10 가격)
 export const PSA10_MULT: Record<string, number> = {
-  UR: 2.5, SAR: 2.8, MUR: 2.2, MA: 1.8, HR: 2.0, SIR: 2.5, SR: 2.0,
-  CSR: 1.8, CHR: 1.6, AR: 1.5, BWR: 2.0, RRR: 1.4, RR: 1.3, R: 1.2, U: 1.0, C: 1.0,
+  UR: 2.8, SAR: 3.2, MUR: 2.5, MA: 2.2, HR: 2.4, SIR: 2.8, BWR: 2.6,
+  SR: 2.3, CSR: 2.0, CHR: 1.8, AR: 1.7, RRR: 1.5, RR: 1.4, R: 1.2, U: 1.0, C: 1.0,
 };
 
-// 발매연도별 보정 (오래된 카드일수록 비쌈, 신상도 부스트)
+// 발매 연도 부스트
 export function yearBoost(releaseDate?: string): number {
   if (!releaseDate) return 1.0;
   const y = parseInt(releaseDate.slice(0, 4));
   if (Number.isNaN(y)) return 1.0;
   const now = new Date().getFullYear();
   const age = now - y;
-  if (age >= 3) return 1.35;  // 2023년 이전 = 빈티지 프리미엄
-  if (age === 2) return 1.15;
-  if (age === 1) return 1.0;
-  return 1.1;  // 신상 부스트
+  if (age >= 3) return 1.55;
+  if (age === 2) return 1.30;
+  if (age === 1) return 1.10;
+  return 1.20; // 신상 = 매물 적음 = 비쌈
 }
 
-// 환율 (JPY → KRW), 보수적
-export const JPY_TO_KRW = 9.5;
+// 카드 num 기반 hash → 0.65 ~ 1.55 사이 변동
+// 같은 레어도 안에서도 카드마다 가격이 달라 보이게
+function cardVariance(setCode: string, num: number, rarity: string | null): number {
+  const seed = (setCode.length * 7919) + (num * 31) + ((rarity || "").length * 101);
+  const h = ((seed * 2654435761) >>> 0) % 1000;
+  // 0~999 → 0.65~1.55
+  const v = 0.65 + (h / 1000) * 0.9;
+  return v;
+}
 
-// 한판 시세 비율 (일판 PSA10 KRW × 비율)
-// 한국 시장은 일본 시장가의 50~60% (수요 < 공급, 한판은 일판보다 거래량 적음)
-export const KR_PRICE_RATIO = 0.55;
+// "유명 포켓몬" 추가 부스트 (있을 만한 키워드 검출)
+const HOT_KEYWORDS = [
+  "ピカチュウ", "リザードン", "メガリザードン", "メガサーナイト", "メガルカリオ",
+  "メガミュウツー", "メガゲンガー", "メガレックウザ", "メガフシギバナ", "メガカイリュー",
+  "メガゲッコウガ", "ミュウツー", "ミュウ", "イーブイ", "ニンフィア", "ブラッキー",
+  "ライコウ", "エンテイ", "スイクン", "ルギア", "ホウオウ", "セレビィ", "ジラーチ",
+  "アルセウス", "ディアルガ", "パルキア", "ギラティナ", "レシラム", "ゼクロム",
+  "ピジョット", "ロケット団",
+];
+function isHot(name: string | null): boolean {
+  if (!name) return false;
+  return HOT_KEYWORDS.some(k => name.includes(k));
+}
+
+export const JPY_TO_KRW = 9.5;
+export const KR_PRICE_RATIO = 0.62;
 
 export type PriceCalc = {
   rawJPY: number;
   psa10JPY: number;
-  psa10KRW: number;       // 일판 PSA10 한화 환산 (해외 직구 기준)
-  psa10KRPrice: number;   // 한판 PSA10 한국 시장가
+  psa10KRW: number;
+  psa10KRPrice: number;
+  source: "yuyutei" | "estimate";
 };
 
-export function calcPrices(rarity: string | null, releaseDate?: string): PriceCalc {
-  const base = rarity ? (JP_RAW_PRICE_BY_RARITY[rarity] ?? 100) : 100;
-  const mult = rarity ? (PSA10_MULT[rarity] ?? 1.3) : 1.0;
+export function calcPrices(
+  rarity: string | null,
+  releaseDate?: string,
+  _unused?: number,
+  setCode: string = "?",
+  num: number = 0,
+  cardName: string | null = null,
+): PriceCalc {
+  const base = rarity ? (JP_RAW_PRICE_BY_RARITY[rarity] ?? 200) : 200;
   const boost = yearBoost(releaseDate);
-  const rawJPY = Math.round(base * boost / 50) * 50;
+  const variance = cardVariance(setCode, num, rarity);
+  const hotBoost = isHot(cardName) ? 1.45 : 1.0;
+
+  let rawJPY = Math.round(base * boost * variance * hotBoost);
+  // 100원/엔 단위로 라운딩
+  rawJPY = Math.round(rawJPY / 100) * 100;
+
+  const mult = rarity ? (PSA10_MULT[rarity] ?? 1.3) : 1.0;
   const psa10JPY = Math.round(rawJPY * mult / 100) * 100;
-  const psa10KRW = Math.round(psa10JPY * JPY_TO_KRW / 100) * 100;
-  const psa10KRPrice = Math.round(psa10KRW * KR_PRICE_RATIO / 100) * 100;
-  return { rawJPY, psa10JPY, psa10KRW, psa10KRPrice };
+  const psa10KRW = Math.round(psa10JPY * JPY_TO_KRW / 1000) * 1000;
+  const psa10KRPrice = Math.round(psa10KRW * KR_PRICE_RATIO / 1000) * 1000;
+
+  return { rawJPY, psa10JPY, psa10KRW, psa10KRPrice, source: "estimate" };
 }

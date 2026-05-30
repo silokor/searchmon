@@ -197,7 +197,7 @@ function CardTile({ card: c }: { card: CardEnriched }) {
           <div className="text-[9px] text-white/30 tracking-wider mb-0.5">PSA10 추정가</div>
           <div className="text-[15px] font-black leading-tight">{formatKRW(price)}</div>
           {isJP && <div className="text-[11px] text-white/50">{formatJPY(c.psa10JPY)}</div>}
-          {!isJP && <div className="text-[10px] text-white/40">(일판 환산가 대비 ~55%)</div>}
+          {!isJP && <div className="text-[10px] text-white/40">(한판 보정 ~62%)</div>}
         </div>
       </div>
     </a>

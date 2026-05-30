@@ -21,9 +21,10 @@ export type CardEnriched = CardEntry & {
   psa10JPY: number;
   psa10KRW: number;       // 일판 한화 환산
   psa10KRPrice: number;   // 한판 한국 시장가
+  source: "yuyutei" | "estimate";
   // 표시용
-  displayName: string;    // "[일판] 이름" / "[한판] 한글이름"
-  koreanName: string | null; // 추정된 한글 카드명 (포켓몬 종족명 기반)
+  displayName: string;
+  koreanName: string | null;
   marketUrl: string;
 };
 
