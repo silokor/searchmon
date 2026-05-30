@@ -4,6 +4,24 @@ import Image from "next/image";
 import type { CardEnriched, Edition } from "@/lib/types";
 import { formatKRW, formatJPY } from "@/lib/types";
 
+function CardImage({ src, alt }: { src: string; alt: string }) {
+  const [loaded, setLoaded] = useState(false);
+  return (
+    <>
+      {!loaded && <div className="absolute inset-0 skeleton" />}
+      <Image
+        src={src}
+        alt={alt}
+        fill
+        sizes="(max-width: 640px) 50vw, 20vw"
+        className={`object-contain p-1.5 group-hover:scale-105 transition-transform duration-500 ${loaded ? "img-fade" : "opacity-0"}`}
+        onLoad={() => setLoaded(true)}
+        unoptimized
+      />
+    </>
+  );
+}
+
 type SortKey = "price-desc" | "price-asc" | "rarity-desc" | "num-asc" | "num-desc";
 type EditionFilter = "all" | "JP" | "KR";
 
@@ -156,14 +174,7 @@ function CardTile({ card: c }: { card: CardEnriched }) {
     >
       <div className="relative aspect-[3/4] bg-black/40 overflow-hidden">
         {c.imageUrl ? (
-          <Image
-            src={c.imageUrl}
-            alt={baseName}
-            fill
-            sizes="(max-width: 640px) 50vw, 20vw"
-            className="object-contain p-1.5 group-hover:scale-105 transition-transform duration-500"
-            unoptimized
-          />
+          <CardImage src={c.imageUrl} alt={baseName} />
         ) : (
           <div className="absolute inset-0 flex items-center justify-center text-white/20 text-[11px]">no image</div>
         )}

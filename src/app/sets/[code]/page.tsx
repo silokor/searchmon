@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import SmartImage from "@/components/SmartImage";
 import { notFound } from "next/navigation";
 import {
   getAllSets, getSetMeta, getEnrichedCards, getHitCards,
@@ -38,13 +39,13 @@ export default async function SetPage({ params, searchParams }: { params: Promis
       <header className="mb-14 grid sm:grid-cols-[280px_1fr] gap-8 items-center">
         <div className="bg-gradient-to-br from-white/5 to-black/30 rounded-2xl p-4 aspect-square flex items-center justify-center border border-white/5">
           {boxImg ? (
-            <Image
+            <SmartImage
               src={boxImg}
               alt={meta.name_ko}
               width={300}
               height={300}
-              className="w-auto max-h-[90%] max-w-[90%] object-contain drop-shadow-[0_15px_40px_rgba(0,0,0,0.7)]"
-              unoptimized
+              containerClassName="w-[90%] h-[90%] flex items-center justify-center"
+              className="w-auto max-h-full max-w-full object-contain drop-shadow-[0_15px_40px_rgba(0,0,0,0.7)]"
             />
           ) : (
             <Image

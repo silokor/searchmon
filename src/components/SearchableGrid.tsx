@@ -2,6 +2,7 @@
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import SmartImage from "@/components/SmartImage";
 import type { SetIndexEntry } from "@/lib/types";
 
 export type SetCardItem = SetIndexEntry & {
@@ -117,13 +118,13 @@ function SetTile({ item: s }: { item: SetCardItem }) {
     >
       <div className="relative aspect-[3/4] bg-gradient-to-br from-white/5 to-black/40 flex items-center justify-center p-4">
         {s.boxImage ? (
-          <Image
+          <SmartImage
             src={s.boxImage}
             alt={s.name_ko}
             width={180}
             height={180}
-            className="w-auto max-h-[70%] max-w-[70%] object-contain drop-shadow-[0_8px_20px_rgba(0,0,0,0.7)]"
-            unoptimized
+            containerClassName="w-[70%] h-[70%] flex items-center justify-center"
+            className="w-auto max-h-full max-w-full object-contain drop-shadow-[0_8px_20px_rgba(0,0,0,0.7)]"
           />
         ) : (
           <Image
