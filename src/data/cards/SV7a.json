@@ -1,0 +1,566 @@
+[
+  {
+    "num": 1,
+    "name": "タマタマ",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_1_R_JP_SM.png"
+  },
+  {
+    "num": 2,
+    "name": "ネマシュ",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_2_R_JP_SM.png"
+  },
+  {
+    "num": 3,
+    "name": "マシェード",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_3_R_JP_SM.png"
+  },
+  {
+    "num": 4,
+    "name": "ダダリン",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_4_R_JP_SM.png"
+  },
+  {
+    "num": 5,
+    "name": "ザルード",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_5_R_JP_SM.png"
+  },
+  {
+    "num": 6,
+    "name": "ポワルン たいようのすがた",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_6_R_JP_SM.png"
+  },
+  {
+    "num": 7,
+    "name": "バオップ",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_7_R_JP_SM.png"
+  },
+  {
+    "num": 8,
+    "name": "バオッキー",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_8_R_JP_SM.png"
+  },
+  {
+    "num": 9,
+    "name": "ウガツホムラ",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_9_R_JP_SM.png"
+  },
+  {
+    "num": 10,
+    "name": "フリージオ",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_10_R_JP_SM.png"
+  },
+  {
+    "num": 11,
+    "name": "ブラックキュレムex",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_11_R_JP_SM.png"
+  },
+  {
+    "num": 12,
+    "name": "ハギギシリ",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_12_R_JP_SM.png"
+  },
+  {
+    "num": 13,
+    "name": "クワッス",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_13_R_JP_SM.png"
+  },
+  {
+    "num": 14,
+    "name": "ウェルカモ",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_14_R_JP_SM.png"
+  },
+  {
+    "num": 15,
+    "name": "ウェーニバル",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_15_R_JP_SM.png"
+  },
+  {
+    "num": 16,
+    "name": "アルクジラ",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_16_R_JP_SM.png"
+  },
+  {
+    "num": 17,
+    "name": "ハルクジラ",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_17_R_JP_SM.png"
+  },
+  {
+    "num": 18,
+    "name": "ムチュール",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_18_R_JP_SM.png"
+  },
+  {
+    "num": 19,
+    "name": "ラティアスex",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_19_R_JP_SM.png"
+  },
+  {
+    "num": 20,
+    "name": "ラティオス",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_20_R_JP_SM.png"
+  },
+  {
+    "num": 21,
+    "name": "カプ・テテフ",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_21_R_JP_SM.png"
+  },
+  {
+    "num": 22,
+    "name": "ヒラヒナ",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_22_R_JP_SM.png"
+  },
+  {
+    "num": 23,
+    "name": "クエスパトラ",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_23_R_JP_SM.png"
+  },
+  {
+    "num": 24,
+    "name": "コレクレー",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_24_R_JP_SM.png"
+  },
+  {
+    "num": 25,
+    "name": "ナックラー",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_25_R_JP_SM.png"
+  },
+  {
+    "num": 26,
+    "name": "ビブラーバ",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_26_R_JP_SM.png"
+  },
+  {
+    "num": 27,
+    "name": "フライゴンex",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_27_R_JP_SM.png"
+  },
+  {
+    "num": 28,
+    "name": "モグリュー",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_28_R_JP_SM.png"
+  },
+  {
+    "num": 29,
+    "name": "ドリュウズ",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_29_R_JP_SM.png"
+  },
+  {
+    "num": 30,
+    "name": "ランドロス",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_30_R_JP_SM.png"
+  },
+  {
+    "num": 31,
+    "name": "ナゲツケサル",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_31_R_JP_SM.png"
+  },
+  {
+    "num": 32,
+    "name": "タタッコ",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_32_R_JP_SM.png"
+  },
+  {
+    "num": 33,
+    "name": "オトスパス",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_33_R_JP_SM.png"
+  },
+  {
+    "num": 34,
+    "name": "エアームド",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_34_R_JP_SM.png"
+  },
+  {
+    "num": 35,
+    "name": "クレッフィ",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_35_R_JP_SM.png"
+  },
+  {
+    "num": 36,
+    "name": "ジュラルドン",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_36_R_JP_SM.png"
+  },
+  {
+    "num": 37,
+    "name": "ブリジュラスex",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_37_R_JP_SM.png"
+  },
+  {
+    "num": 38,
+    "name": "サーフゴー",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_38_R_JP_SM.png"
+  },
+  {
+    "num": 39,
+    "name": "テツノカシラ",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_39_R_JP_SM.png"
+  },
+  {
+    "num": 40,
+    "name": "アローラ ナッシーex",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_40_R_JP_SM.png"
+  },
+  {
+    "num": 41,
+    "name": "チルタリス",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_41_R_JP_SM.png"
+  },
+  {
+    "num": 42,
+    "name": "ディアルガ",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_42_R_JP_SM.png"
+  },
+  {
+    "num": 43,
+    "name": "パルキア",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_43_R_JP_SM.png"
+  },
+  {
+    "num": 44,
+    "name": "バクガメス",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_44_R_JP_SM.png"
+  },
+  {
+    "num": 45,
+    "name": "カジッチュ",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_45_R_JP_SM.png"
+  },
+  {
+    "num": 46,
+    "name": "アップリュー",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_46_R_JP_SM.png"
+  },
+  {
+    "num": 47,
+    "name": "タルップル",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_47_R_JP_SM.png"
+  },
+  {
+    "num": 48,
+    "name": "チルット",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_48_R_JP_SM.png"
+  },
+  {
+    "num": 49,
+    "name": "ワシボン",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_49_R_JP_SM.png"
+  },
+  {
+    "num": 50,
+    "name": "ウォーグル",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_50_R_JP_SM.png"
+  },
+  {
+    "num": 51,
+    "name": "モトトカゲex",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_51_R_JP_SM.png"
+  },
+  {
+    "num": 52,
+    "name": "エネルギー転送PRO",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_52_R_JP_SM.png"
+  },
+  {
+    "num": 53,
+    "name": "おたすけベル",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_53_R_JP_SM.png"
+  },
+  {
+    "num": 54,
+    "name": "ダークボール",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_54_R_JP_SM.png"
+  },
+  {
+    "num": 55,
+    "name": "ぼうがいレター",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_55_R_JP_SM.png"
+  },
+  {
+    "num": 56,
+    "name": "メガトンブロアー",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_56_R_JP_SM.png"
+  },
+  {
+    "num": 57,
+    "name": "竜の秘薬",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_57_R_JP_SM.png"
+  },
+  {
+    "num": 58,
+    "name": "イトケのみ",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_58_R_JP_SM.png"
+  },
+  {
+    "num": 59,
+    "name": "カウンターゲイン",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_59_R_JP_SM.png"
+  },
+  {
+    "num": 60,
+    "name": "カキツバタ",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_60_R_JP_SM.png"
+  },
+  {
+    "num": 61,
+    "name": "サーファー",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_61_R_JP_SM.png"
+  },
+  {
+    "num": 62,
+    "name": "ドラセナ",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_62_R_JP_SM.png"
+  },
+  {
+    "num": 63,
+    "name": "ルチアのアピール",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_63_R_JP_SM.png"
+  },
+  {
+    "num": 64,
+    "name": "リッチエネルギー",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_64_R_JP_SM.png"
+  },
+  {
+    "num": 65,
+    "name": "タマタマ",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_65_R_JP_SM.png"
+  },
+  {
+    "num": 66,
+    "name": "マシェード",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_66_R_JP_SM.png"
+  },
+  {
+    "num": 67,
+    "name": "ポワルン たいようのすがた",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_67_R_JP_SM.png"
+  },
+  {
+    "num": 68,
+    "name": "ハギギシリ",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_68_R_JP_SM.png"
+  },
+  {
+    "num": 69,
+    "name": "ハルクジラ",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_69_R_JP_SM.png"
+  },
+  {
+    "num": 70,
+    "name": "ラティオス",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_70_R_JP_SM.png"
+  },
+  {
+    "num": 71,
+    "name": "ビブラーバ",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_71_R_JP_SM.png"
+  },
+  {
+    "num": 72,
+    "name": "タタッコ",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_72_R_JP_SM.png"
+  },
+  {
+    "num": 73,
+    "name": "エアームド",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_73_R_JP_SM.png"
+  },
+  {
+    "num": 74,
+    "name": "アップリュー",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_74_R_JP_SM.png"
+  },
+  {
+    "num": 75,
+    "name": "タルップル",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_75_R_JP_SM.png"
+  },
+  {
+    "num": 76,
+    "name": "ウォーグル",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_76_R_JP_SM.png"
+  },
+  {
+    "num": 77,
+    "name": "ブラックキュレムex",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_77_R_JP_SM.png"
+  },
+  {
+    "num": 78,
+    "name": "ラティアスex",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_78_R_JP_SM.png"
+  },
+  {
+    "num": 79,
+    "name": "フライゴンex",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_79_R_JP_SM.png"
+  },
+  {
+    "num": 80,
+    "name": "ブリジュラスex",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_80_R_JP_SM.png"
+  },
+  {
+    "num": 81,
+    "name": "アローラ ナッシーex",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_81_R_JP_SM.png"
+  },
+  {
+    "num": 82,
+    "name": "モトトカゲex",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_82_R_JP_SM.png"
+  },
+  {
+    "num": 83,
+    "name": "カキツバタ",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_83_R_JP_SM.png"
+  },
+  {
+    "num": 84,
+    "name": "サーファー",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_84_R_JP_SM.png"
+  },
+  {
+    "num": 85,
+    "name": "ドラセナ",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_85_R_JP_SM.png"
+  },
+  {
+    "num": 86,
+    "name": "ルチアのアピール",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_86_R_JP_SM.png"
+  },
+  {
+    "num": 87,
+    "name": "ラティアスex",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_87_R_JP_SM.png"
+  },
+  {
+    "num": 88,
+    "name": "ブリジュラスex",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_88_R_JP_SM.png"
+  },
+  {
+    "num": 89,
+    "name": "アローラ ナッシーex",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_89_R_JP_SM.png"
+  },
+  {
+    "num": 90,
+    "name": "カキツバタ",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_90_R_JP_SM.png"
+  },
+  {
+    "num": 91,
+    "name": "ルチアのアピール",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_91_R_JP_SM.png"
+  },
+  {
+    "num": 92,
+    "name": "アローラ ナッシーex",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_92_R_JP_SM.png"
+  },
+  {
+    "num": 93,
+    "name": "カウンターゲイン",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_93_R_JP_SM.png"
+  },
+  {
+    "num": 94,
+    "name": "ジェットエネルギー",
+    "rarity": "R",
+    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV7a/SV7a_94_R_JP_SM.png"
+  }
+]

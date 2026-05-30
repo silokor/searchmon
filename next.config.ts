@@ -1,7 +1,13 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  images: {
+    remotePatterns: [
+      { protocol: "https", hostname: "limitlesstcg.nyc3.cdn.digitaloceanspaces.com" },
+      { protocol: "https", hostname: "limitless3.nyc3.cdn.digitaloceanspaces.com" },
+      { protocol: "https", hostname: "s3.limitlesstcg.com" },
+    ],
+  },
 };
 
 export default nextConfig;

@@ -75,8 +75,8 @@ export default async function SetPage({ params }: { params: Promise<{ code: stri
 function CardTile({ setCode, card, compact = false }: { setCode: string; card: { num: number; name: string | null; rarity: string | null; imageUrl: string | null }; compact?: boolean }) {
   const rank = rankRarity(card.rarity);
   const isHit = rank >= 60;
-  const ext = card.imageUrl?.match(/\.(png|jpg|webp)/i)?.[1] || "png";
-  const src = `/images/cards/${setCode}/${card.num}.${ext}`;
+  // CDN 직접 사용 — git/vercel 부담 X
+  const src = card.imageUrl || `/images/cards/${setCode}/${card.num}.png`;
 
   return (
     <a

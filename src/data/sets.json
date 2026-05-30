@@ -19,5 +19,159 @@
     "name_ko": "트리플렛 비트",
     "name_full": "Triplet Beat (SV1a)",
     "cardCount": 103
+  },
+  {
+    "code": "SV2D",
+    "name_ja": "SV2D クレイバースト",
+    "name_ko": "클레이버스트",
+    "name_full": "Clay Burst (SV2D)",
+    "cardCount": 99
+  },
+  {
+    "code": "SV2P",
+    "name_ja": "SV2P スノーハザード",
+    "name_ko": "스노우 해저드",
+    "name_full": "Snow Hazard (SV2P)",
+    "cardCount": 99
+  },
+  {
+    "code": "SV2a",
+    "name_ja": "SV2a ポケモンカード151",
+    "name_ko": "포켓몬 151",
+    "name_full": "Pokémon Card 151 (SV2a)",
+    "cardCount": 210
+  },
+  {
+    "code": "SV3",
+    "name_ja": "SV3 黒炎の支配者",
+    "name_ko": "흑염의 지배자",
+    "name_full": "Ruler of the Black Flame (SV3)",
+    "cardCount": 141
+  },
+  {
+    "code": "SV3a",
+    "name_ja": "SV3a レイジングサーフ",
+    "name_ko": "레이징 서프",
+    "name_full": "Raging Surf (SV3a)",
+    "cardCount": 92
+  },
+  {
+    "code": "SV4K",
+    "name_ja": "SV4K 古代の咆哮",
+    "name_ko": "고대의 포효",
+    "name_full": "Ancient Roar (SV4K)",
+    "cardCount": 94
+  },
+  {
+    "code": "SV4M",
+    "name_ja": "SV4M 未来の一閃",
+    "name_ko": "미래의 일섬",
+    "name_full": "Future Flash (SV4M)",
+    "cardCount": 94
+  },
+  {
+    "code": "SV4a",
+    "name_ja": "SV4a シャイニートレジャーex",
+    "name_ko": "샤이니 트레저 ex",
+    "name_full": "Shiny Treasure ex (SV4a)",
+    "cardCount": 360
+  },
+  {
+    "code": "SV5K",
+    "name_ja": "SV5K ワイルドフォース",
+    "name_ko": "와일드 포스",
+    "name_full": "Wild Force (SV5K)",
+    "cardCount": 100
+  },
+  {
+    "code": "SV5M",
+    "name_ja": "SV5M サイバージャッジ",
+    "name_ko": "사이버 저지",
+    "name_full": "Cyber Judge (SV5M)",
+    "cardCount": 100
+  },
+  {
+    "code": "SV5a",
+    "name_ja": "SV5a クリムゾンヘイズ",
+    "name_ko": "크림슨 헤이즈",
+    "name_full": "Crimson Haze (SV5a)",
+    "cardCount": 96
+  },
+  {
+    "code": "SV6",
+    "name_ja": "SV6 変幻の仮面",
+    "name_ko": "변환의 가면",
+    "name_full": "Mask of Change (SV6)",
+    "cardCount": 133
+  },
+  {
+    "code": "SV6a",
+    "name_ja": "SV6a ナイトワンダラー",
+    "name_ko": "나이트 원더러",
+    "name_full": "Night Wanderer (SV6a)",
+    "cardCount": 94
+  },
+  {
+    "code": "SV7",
+    "name_ja": "SV7 ステラミラクル",
+    "name_ko": "스텔라 미라클",
+    "name_full": "Stellar Miracle (SV7)",
+    "cardCount": 135
+  },
+  {
+    "code": "SV7a",
+    "name_ja": "SV7a パラダイムトリガー",
+    "name_ko": "패러다임 트리거",
+    "name_full": "Paradise Dragona (SV7a)",
+    "cardCount": 94
+  },
+  {
+    "code": "SV8",
+    "name_ja": "SV8 超電ブレイカー",
+    "name_ko": "초전 브레이커",
+    "name_full": "Super Electric Breaker (SV8)",
+    "cardCount": 137
+  },
+  {
+    "code": "SV8a",
+    "name_ja": "SV8a テラスタルフェスティバル",
+    "name_ko": "테라스탈 페스티벌 ex",
+    "name_full": "Terastal Fest ex (SV8a)",
+    "cardCount": 237
+  },
+  {
+    "code": "SV9",
+    "name_ja": "SV9 バトルパートナーズ",
+    "name_ko": "배틀 파트너즈",
+    "name_full": "Battle Partners (SV9)",
+    "cardCount": 132
+  },
+  {
+    "code": "SV9a",
+    "name_ja": "SV9a ヒートウェイブアリーナ",
+    "name_ko": "히트웨이브 아레나",
+    "name_full": "Heat Wave Arena (SV9a)",
+    "cardCount": 92
+  },
+  {
+    "code": "SV10",
+    "name_ja": "SV10 ロケット団の栄光",
+    "name_ko": "로켓단의 영광",
+    "name_full": "Glory of Team Rocket (SV10)",
+    "cardCount": 132
+  },
+  {
+    "code": "SV11W",
+    "name_ja": "SV11W メガホワイトex",
+    "name_ko": "메가 화이트 ex",
+    "name_full": "White Flare (SV11W)",
+    "cardCount": 174
+  },
+  {
+    "code": "SV11B",
+    "name_ja": "SV11B メガブラックex",
+    "name_ko": "메가 블랙 ex",
+    "name_full": "Black Bolt (SV11B)",
+    "cardCount": 174
   }
 ]
