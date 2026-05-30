@@ -163,13 +163,15 @@ export const SET_EXTRAS: Record<string, SetMetaExtra> = {
     packPriceJPY: 500, boxPriceJPY: 15000, msrpPackJPY: 180, msrpBoxJPY: 5400, releaseJP: "2025-05-30",
   },
   SV11W: {
-    code: "SV11W", releasedKR: false,
-    nameKR_full: "메가 화이트 ex (한국 미발매)",
+    code: "SV11W", releasedKR: true,
+    packPriceKR: 3500, boxPriceKR: 105000, msrpPackKR: 2200, msrpBoxKR: 66000, releaseKR: "2026-02-27",
+    nameKR_full: "화이트 플레어",
     packPriceJPY: 430, boxPriceJPY: 13000, msrpPackJPY: 180, msrpBoxJPY: 5400, releaseJP: "2025-11-28",
   },
   SV11B: {
-    code: "SV11B", releasedKR: false,
-    nameKR_full: "메가 블랙 ex (한국 미발매)",
+    code: "SV11B", releasedKR: true,
+    packPriceKR: 4200, boxPriceKR: 125000, msrpPackKR: 2200, msrpBoxKR: 66000, releaseKR: "2026-02-27",
+    nameKR_full: "블랙 볼트",
     packPriceJPY: 500, boxPriceJPY: 15000, msrpPackJPY: 180, msrpBoxJPY: 5400, releaseJP: "2025-11-28",
   },
 };
