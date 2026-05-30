@@ -1,0 +1,23 @@
+[
+  {
+    "code": "SV1V",
+    "name_ja": "ポケモンカード151以前 SV1V スカーレットex",
+    "name_ko": "스칼렛 ex",
+    "name_full": "Violet ex (SV1V)",
+    "cardCount": 108
+  },
+  {
+    "code": "SV1S",
+    "name_ja": "SV1S バイオレットex",
+    "name_ko": "바이올렛 ex",
+    "name_full": "Scarlet ex (SV1S)",
+    "cardCount": 108
+  },
+  {
+    "code": "SV1a",
+    "name_ja": "SV1a トリプレットビート",
+    "name_ko": "트리플렛 비트",
+    "name_full": "Triplet Beat (SV1a)",
+    "cardCount": 103
+  }
+]
