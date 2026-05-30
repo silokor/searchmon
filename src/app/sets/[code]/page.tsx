@@ -36,7 +36,7 @@ export default async function SetPage({ params, searchParams }: { params: Promis
       </Link>
 
       <header className="mb-14 grid sm:grid-cols-[280px_1fr] gap-8 items-center">
-        <div className="bg-gradient-to-br from-white/5 to-black/30 rounded-2xl p-6 aspect-[5/4] flex items-center justify-center border border-white/5">
+        <div className="bg-gradient-to-br from-white/5 to-black/30 rounded-2xl p-4 aspect-square flex items-center justify-center border border-white/5">
           {boxImg ? (
             <Image
               src={boxImg}
