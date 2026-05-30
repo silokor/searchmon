@@ -188,8 +188,11 @@ function CardTile({ card: c }: { card: CardEnriched }) {
       <div className="p-3">
         <div className="text-[10px] text-white/30 mb-0.5">#{c.num}</div>
         <div className="text-[13px] font-bold truncate mb-0.5">
-          <span style={{ color: editionColor }}>[{editionLabel}]</span> {baseName}
+          <span style={{ color: editionColor }}>[{editionLabel}]</span> {isJP ? baseName : (c.koreanName || baseName)}
         </div>
+        {!isJP && c.koreanName && c.koreanName !== baseName && (
+          <div className="text-[10px] text-white/30 truncate">{baseName}</div>
+        )}
         <div className="bg-white/5 rounded-lg px-2.5 py-2 mt-2">
           <div className="text-[9px] text-white/30 tracking-wider mb-0.5">PSA10 추정가</div>
           <div className="text-[15px] font-black leading-tight">{formatKRW(price)}</div>

@@ -6,7 +6,7 @@ import boxImagesJson from "@/data/boxImages.json";
 import printedTotalsJson from "@/data/printedTotals.json";
 import {
   type CardEntry, type CardEnriched, type SetIndexEntry, type Edition,
-  mercariUrl, bungaeUrl,
+  mercariUrl, bungaeUrl, toKoreanCardName,
 } from "@/lib/types";
 
 const boxImages = boxImagesJson as Record<string, string>;
@@ -86,6 +86,7 @@ export function enrichCards(setCode: string, cards: CardEntry[], releasedKR: boo
     const rank = rankRarity(c.rarity);
     const num = c.num as number;
     const baseName = c.name || `#${num}`;
+    const koName = toKoreanCardName(c.name);
 
     // [일판] 카드
     out.push({
@@ -93,6 +94,7 @@ export function enrichCards(setCode: string, cards: CardEntry[], releasedKR: boo
       edition: "JP",
       rank,
       ...price,
+      koreanName: koName,
       displayName: `[일판] ${baseName}`,
       marketUrl: mercariUrl(setCode, c.name, num, true),
     });
@@ -104,8 +106,9 @@ export function enrichCards(setCode: string, cards: CardEntry[], releasedKR: boo
         edition: "KR",
         rank,
         ...price,
-        displayName: `[한판] ${baseName}`,
-        marketUrl: bungaeUrl(c.name, num, setNameKR),
+        koreanName: koName,
+        displayName: `[한판] ${koName || baseName}`,
+        marketUrl: bungaeUrl(koName, c.name, num, setNameKR),
       });
     }
   }
