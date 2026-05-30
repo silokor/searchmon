@@ -12,6 +12,10 @@ export type SetCardItem = SetIndexEntry & {
   boxPriceKR?: number;
   packPriceJPY: number;
   boxPriceJPY: number;
+  msrpPackKR?: number;
+  msrpBoxKR?: number;
+  msrpPackJPY?: number;
+  msrpBoxJPY?: number;
   releasedKR: boolean;
   releaseJP: string;
   releaseKR?: string;
@@ -98,7 +102,13 @@ function SetTile({ item: s }: { item: SetCardItem }) {
   const editionColor = isJP ? "#FFD400" : "#5BC0FF";
   const packPrice = isJP ? s.packPriceJPY : s.packPriceKR;
   const boxPrice  = isJP ? s.boxPriceJPY  : s.boxPriceKR;
+  const msrpBox   = isJP ? s.msrpBoxJPY   : s.msrpBoxKR;
   const releaseDate = isJP ? s.releaseJP : s.releaseKR;
+  // 차익률 (리셀가 / 정가)
+  const premium = (boxPrice && msrpBox) ? Math.round((boxPrice / msrpBox) * 100) / 100 : null;
+  const premiumLabel = premium ? `${premium.toFixed(1)}×` : null;
+  const isHot = premium !== null && premium >= 1.5;
+  const isDown = premium !== null && premium < 1.0;
 
   return (
     <Link
@@ -132,6 +142,18 @@ function SetTile({ item: s }: { item: SetCardItem }) {
         >
           {editionLabel}
         </span>
+        {/* 차익률 뱃지 */}
+        {premiumLabel && (
+          <span
+            className="absolute top-2 right-2 text-[10px] font-black px-1.5 py-0.5 rounded tracking-wider"
+            style={{
+              background: isHot ? "var(--accent)" : isDown ? "rgba(255,255,255,0.1)" : "rgba(255,255,255,0.15)",
+              color: isHot ? "#000" : isDown ? "rgba(255,255,255,0.5)" : "#fff",
+            }}
+          >
+            {premiumLabel}
+          </span>
+        )}
       </div>
       <div className="p-2.5 sm:p-3 border-t border-white/5">
         <div className="text-[10px] text-white/30 tracking-widest mb-0.5">{s.code}</div>
@@ -153,6 +175,12 @@ function SetTile({ item: s }: { item: SetCardItem }) {
               {boxPrice ? (isJP ? `¥${boxPrice.toLocaleString()}` : `₩${boxPrice.toLocaleString()}`) : "—"}
             </span>
           </div>
+          {msrpBox && (
+            <div className="flex items-center justify-between text-[9px] mt-0.5 text-white/25">
+              <span>정가</span>
+              <span>{isJP ? `¥${msrpBox.toLocaleString()}` : `₩${msrpBox.toLocaleString()}`}</span>
+            </div>
+          )}
         </div>
 
         <div className="mt-1.5 flex items-center justify-between text-[10px] text-white/30">
