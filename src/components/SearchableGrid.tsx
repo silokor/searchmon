@@ -101,12 +101,17 @@ function SetTile({ item: s }: { item: SetCardItem }) {
   const isJP = s.edition === "JP";
   const editionLabel = isJP ? "일판" : "한판";
   const editionColor = isJP ? "#FFD400" : "#5BC0FF";
-  const packPrice = isJP ? s.packPriceJPY : s.packPriceKR;
-  const boxPrice  = isJP ? s.boxPriceJPY  : s.boxPriceKR;
-  const msrpBox   = isJP ? s.msrpBoxJPY   : s.msrpBoxKR;
+  // 둘 다 ₩ 메인 표시 — 일판은 Kream JPY*9.5로 환산
+  const JTK = 9.5;
+  const packKRW = isJP ? Math.round(s.packPriceJPY * JTK / 100) * 100 : s.packPriceKR;
+  const boxKRW  = isJP ? Math.round(s.boxPriceJPY  * JTK / 1000) * 1000 : s.boxPriceKR;
+  const packSub = isJP ? `¥${s.packPriceJPY.toLocaleString()}` : null;
+  const boxSub  = isJP ? `¥${s.boxPriceJPY.toLocaleString()}` : null;
+  const msrpBox = isJP ? s.msrpBoxJPY   : s.msrpBoxKR;
   const releaseDate = isJP ? s.releaseJP : s.releaseKR;
-  // 차익률 (리셀가 / 정가)
-  const premium = (boxPrice && msrpBox) ? Math.round((boxPrice / msrpBox) * 100) / 100 : null;
+  // 차익률 (리셀가 / 정가) — 일판은 JPY 기준
+  const resellForRatio = isJP ? s.boxPriceJPY : s.boxPriceKR;
+  const premium = (resellForRatio && msrpBox) ? Math.round((resellForRatio / msrpBox) * 100) / 100 : null;
   const premiumLabel = premium ? `${premium.toFixed(1)}×` : null;
   const isHot = premium !== null && premium >= 1.5;
   const isDown = premium !== null && premium < 1.0;
@@ -167,13 +172,15 @@ function SetTile({ item: s }: { item: SetCardItem }) {
           <div className="flex items-center justify-between text-[10px]">
             <span className="text-white/40">1팩</span>
             <span className="text-white font-bold">
-              {packPrice ? (isJP ? `¥${packPrice.toLocaleString()}` : `₩${packPrice.toLocaleString()}`) : "—"}
+              {packKRW ? `₩${packKRW.toLocaleString()}` : "—"}
+              {packSub && <span className="text-white/30 ml-1 font-normal">({packSub})</span>}
             </span>
           </div>
           <div className="flex items-center justify-between text-[10px] mt-0.5">
             <span className="text-white/40">1박스</span>
             <span className="text-white font-bold">
-              {boxPrice ? (isJP ? `¥${boxPrice.toLocaleString()}` : `₩${boxPrice.toLocaleString()}`) : "—"}
+              {boxKRW ? `₩${boxKRW.toLocaleString()}` : "—"}
+              {boxSub && <span className="text-white/30 ml-1 font-normal">({boxSub})</span>}
             </span>
           </div>
           {msrpBox && (
