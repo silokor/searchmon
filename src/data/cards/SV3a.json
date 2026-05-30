@@ -2,553 +2,737 @@
   {
     "num": 1,
     "name": "ユキメノコex",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_1_R_JP_SM.png"
+    "rarity": "Double rare",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/001/high.png",
+    "illustrator": "5ban Graphics",
+    "category": "Pokemon"
   },
   {
     "num": 2,
     "name": "ラプラス",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_2_R_JP_SM.png"
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/002/high.png",
+    "illustrator": "Gemi",
+    "category": "Pokemon"
   },
   {
     "num": 3,
     "name": "テッポウオ",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_3_R_JP_SM.png"
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/003/high.png",
+    "illustrator": "Midori Harada",
+    "category": "Pokemon"
   },
   {
     "num": 4,
     "name": "オクタン",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_4_R_JP_SM.png"
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/004/high.png",
+    "illustrator": "Yuka Morii",
+    "category": "Pokemon"
   },
   {
     "num": 5,
     "name": "ユキワラシ",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_5_R_JP_SM.png"
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/005/high.png",
+    "illustrator": "satoma",
+    "category": "Pokemon"
   },
   {
     "num": 6,
     "name": "ガブリアスex",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_6_R_JP_SM.png"
+    "rarity": "Double rare",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/006/high.png",
+    "illustrator": "5ban Graphics",
+    "category": "Pokemon"
   },
   {
     "num": 7,
     "name": "タマンタ",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_7_R_JP_SM.png"
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/007/high.png",
+    "illustrator": "miki kudo",
+    "category": "Pokemon"
   },
   {
     "num": 8,
     "name": "パルキア",
     "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_8_R_JP_SM.png"
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/008/high.png",
+    "illustrator": "Ryuta Fuse",
+    "category": "Pokemon"
   },
   {
     "num": 9,
     "name": "コソクムシ",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_9_R_JP_SM.png"
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/009/high.png",
+    "illustrator": "Shigenori Negishi",
+    "category": "Pokemon"
   },
   {
     "num": 10,
     "name": "グソクムシャ",
     "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_10_R_JP_SM.png"
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/010/high.png",
+    "illustrator": "nagimiso",
+    "category": "Pokemon"
   },
   {
     "num": 11,
     "name": "ヘイラッシャ",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_11_R_JP_SM.png"
+    "rarity": "U",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/011/high.png",
+    "illustrator": "Kouki Saitou",
+    "category": "Pokemon"
   },
   {
     "num": 12,
     "name": "チョンチー",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_12_R_JP_SM.png"
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/012/high.png",
+    "illustrator": "yuu",
+    "category": "Pokemon"
   },
   {
     "num": 13,
     "name": "ランターン",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_13_R_JP_SM.png"
+    "rarity": "U",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/013/high.png",
+    "illustrator": "aspara",
+    "category": "Pokemon"
   },
   {
     "num": 14,
     "name": "プラスル",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_14_R_JP_SM.png"
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/014/high.png",
+    "illustrator": "Sekio",
+    "category": "Pokemon"
   },
   {
     "num": 15,
     "name": "マイナン",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_15_R_JP_SM.png"
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/015/high.png",
+    "illustrator": "Narumi Sato",
+    "category": "Pokemon"
   },
   {
     "num": 16,
     "name": "バチュル",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_16_R_JP_SM.png"
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/016/high.png",
+    "illustrator": "Kedamahadaitai Yawarakai",
+    "category": "Pokemon"
   },
   {
     "num": 17,
     "name": "デンチュラ",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_17_R_JP_SM.png"
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/017/high.png",
+    "illustrator": "Taira Akitsu",
+    "category": "Pokemon"
   },
   {
     "num": 18,
     "name": "ゼクロム",
     "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_18_R_JP_SM.png"
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/018/high.png",
+    "illustrator": "Shiburingaru",
+    "category": "Pokemon"
   },
   {
     "num": 19,
     "name": "カプ・コケコex",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_19_R_JP_SM.png"
+    "rarity": "Double rare",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/019/high.png",
+    "illustrator": "hncl",
+    "category": "Pokemon"
   },
   {
     "num": 20,
     "name": "コレクレー",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_20_R_JP_SM.png"
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/020/high.png",
+    "illustrator": "Mizue",
+    "category": "Pokemon"
   },
   {
     "num": 21,
     "name": "コレクレー",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_21_R_JP_SM.png"
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/021/high.png",
+    "illustrator": "Kouki Saitou",
+    "category": "Pokemon"
   },
   {
     "num": 22,
     "name": "グライガー",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_22_R_JP_SM.png"
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/022/high.png",
+    "illustrator": "HYOGONOSUKE",
+    "category": "Pokemon"
   },
   {
     "num": 23,
     "name": "グライオン",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_23_R_JP_SM.png"
+    "rarity": "U",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/023/high.png",
+    "illustrator": "GOSSAN",
+    "category": "Pokemon"
   },
   {
     "num": 24,
     "name": "ゴマゾウ",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_24_R_JP_SM.png"
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/024/high.png",
+    "illustrator": "Atsuko Nishida",
+    "category": "Pokemon"
   },
   {
     "num": 25,
     "name": "ドンファン",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_25_R_JP_SM.png"
+    "rarity": "U",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/025/high.png",
+    "illustrator": "Shin Nagasawa",
+    "category": "Pokemon"
   },
   {
     "num": 26,
     "name": "グラードン",
     "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_26_R_JP_SM.png"
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/026/high.png",
+    "illustrator": "Uta",
+    "category": "Pokemon"
   },
   {
     "num": 27,
     "name": "フカマル",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_27_R_JP_SM.png"
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/027/high.png",
+    "illustrator": "saino misaki",
+    "category": "Pokemon"
   },
   {
     "num": 28,
     "name": "ガバイト",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_28_R_JP_SM.png"
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/028/high.png",
+    "illustrator": "Nisota Niso",
+    "category": "Pokemon"
   },
   {
     "num": 29,
     "name": "フーパex",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_29_R_JP_SM.png"
+    "rarity": "Double rare",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/029/high.png",
+    "illustrator": "5ban Graphics",
+    "category": "Pokemon"
   },
   {
     "num": 30,
     "name": "メテノ",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_30_R_JP_SM.png"
+    "rarity": "U",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/030/high.png",
+    "illustrator": "OKUBO",
+    "category": "Pokemon"
   },
   {
     "num": 31,
     "name": "ガケガニ",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_31_R_JP_SM.png"
+    "rarity": "U",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/031/high.png",
+    "illustrator": "Yuya Oka",
+    "category": "Pokemon"
   },
   {
     "num": 32,
     "name": "カラミンゴ",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_32_R_JP_SM.png"
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/032/high.png",
+    "illustrator": "Anesaki Dynamic",
+    "category": "Pokemon"
   },
   {
     "num": 33,
     "name": "ゴース",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_33_R_JP_SM.png"
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/033/high.png",
+    "illustrator": "Nobuhiro Imagawa",
+    "category": "Pokemon"
   },
   {
     "num": 34,
     "name": "ゴースト",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_34_R_JP_SM.png"
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/034/high.png",
+    "illustrator": "DOM",
+    "category": "Pokemon"
   },
   {
     "num": 35,
     "name": "ゲンガー",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_35_R_JP_SM.png"
+    "rarity": "U",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/035/high.png",
+    "illustrator": "Nelnal",
+    "category": "Pokemon"
   },
   {
     "num": 36,
     "name": "アブソル",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_36_R_JP_SM.png"
+    "rarity": "U",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/036/high.png",
+    "illustrator": "Shinji Kanda",
+    "category": "Pokemon"
   },
   {
     "num": 37,
     "name": "ズルッグ",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_37_R_JP_SM.png"
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/037/high.png",
+    "illustrator": "sowsow",
+    "category": "Pokemon"
   },
   {
     "num": 38,
     "name": "ズルズキン",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_38_R_JP_SM.png"
+    "rarity": "U",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/038/high.png",
+    "illustrator": "Mousho",
+    "category": "Pokemon"
   },
   {
     "num": 39,
     "name": "イベルタル",
     "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_39_R_JP_SM.png"
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/039/high.png",
+    "illustrator": "kawayoo",
+    "category": "Pokemon"
   },
   {
     "num": 40,
     "name": "クスネ",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_40_R_JP_SM.png"
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/040/high.png",
+    "illustrator": "Yuu Nishida",
+    "category": "Pokemon"
   },
   {
     "num": 41,
     "name": "フォクスライ",
     "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_41_R_JP_SM.png"
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/041/high.png",
+    "illustrator": "SIE NANAHARA",
+    "category": "Pokemon"
   },
   {
     "num": 42,
     "name": "ジラーチ",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_42_R_JP_SM.png"
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/042/high.png",
+    "illustrator": "Naoyo Kimura",
+    "category": "Pokemon"
   },
   {
     "num": 43,
     "name": "テッシード",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_43_R_JP_SM.png"
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/043/high.png",
+    "illustrator": "Miki Tanaka",
+    "category": "Pokemon"
   },
   {
     "num": 44,
     "name": "ナットレイ",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_44_R_JP_SM.png"
+    "rarity": "U",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/044/high.png",
+    "illustrator": "SATOSHI NAKAI",
+    "category": "Pokemon"
   },
   {
     "num": 45,
     "name": "ヒトツキ",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_45_R_JP_SM.png"
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/045/high.png",
+    "illustrator": "aoki",
+    "category": "Pokemon"
   },
   {
     "num": 46,
     "name": "ニダンギル",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_46_R_JP_SM.png"
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/046/high.png",
+    "illustrator": "Bun Toujo",
+    "category": "Pokemon"
   },
   {
     "num": 47,
     "name": "ギルガルド",
     "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_47_R_JP_SM.png"
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/047/high.png",
+    "illustrator": "Jiro Sasumo",
+    "category": "Pokemon"
   },
   {
     "num": 48,
     "name": "ザシアン",
     "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_48_R_JP_SM.png"
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/048/high.png",
+    "illustrator": "Tonji Matsuno",
+    "category": "Pokemon"
   },
   {
     "num": 49,
     "name": "ミミズズ",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_49_R_JP_SM.png"
+    "rarity": "U",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/049/high.png",
+    "illustrator": "Pani Kobayashi",
+    "category": "Pokemon"
   },
   {
     "num": 50,
     "name": "サーフゴーex",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_50_R_JP_SM.png"
+    "rarity": "Double rare",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/050/high.png",
+    "illustrator": "takuyoa",
+    "category": "Pokemon"
   },
   {
     "num": 51,
     "name": "オトシドリex",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_51_R_JP_SM.png"
+    "rarity": "Double rare",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/051/high.png",
+    "illustrator": "PLANETA Mochizuki",
+    "category": "Pokemon"
   },
   {
     "num": 52,
     "name": "モトトカゲ",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_52_R_JP_SM.png"
+    "rarity": "U",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/052/high.png",
+    "illustrator": "kawayoo",
+    "category": "Pokemon"
   },
   {
     "num": 53,
     "name": "ふしぎなアメ",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_53_R_JP_SM.png"
+    "rarity": "U",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/053/high.png",
+    "illustrator": "Studio Bora Inc.",
+    "category": "Trainer"
   },
   {
     "num": 54,
     "name": "ポケモンいれかえ",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_54_R_JP_SM.png"
+    "rarity": "U",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/054/high.png",
+    "illustrator": "Studio Bora Inc.",
+    "category": "Trainer"
   },
   {
     "num": 55,
     "name": "ゴージャスマント",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_55_R_JP_SM.png"
+    "rarity": "U",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/055/high.png",
+    "illustrator": "Toyste Beach",
+    "category": "Trainer"
   },
   {
     "num": 56,
     "name": "ワザマシン エナジーターボ",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_56_R_JP_SM.png"
+    "rarity": "U",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/056/high.png",
+    "illustrator": "Studio Bora Inc.",
+    "category": "Trainer"
   },
   {
     "num": 57,
     "name": "ワザマシン やみうち",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_57_R_JP_SM.png"
+    "rarity": "U",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/057/high.png",
+    "illustrator": "Studio Bora Inc.",
+    "category": "Trainer"
   },
   {
     "num": 58,
     "name": "アオキ",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_58_R_JP_SM.png"
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/058/high.png",
+    "illustrator": "Akira Komayama",
+    "category": "Trainer"
   },
   {
     "num": 59,
     "name": "シキミ",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_59_R_JP_SM.png"
+    "rarity": "U",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/059/high.png",
+    "illustrator": "yuu",
+    "category": "Trainer"
   },
   {
     "num": 60,
     "name": "チリ",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_60_R_JP_SM.png"
+    "rarity": "U",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/060/high.png",
+    "illustrator": "GIDORA",
+    "category": "Trainer"
   },
   {
     "num": 61,
     "name": "パラソルおねえさん",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_61_R_JP_SM.png"
+    "rarity": "C",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/061/high.png",
+    "illustrator": "Cona Nitanda",
+    "category": "Trainer"
   },
   {
     "num": 62,
     "name": "メディカルエネルギー",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_62_R_JP_SM.png"
+    "rarity": "U",
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/062/high.png",
+    "illustrator": "5ban Graphics",
+    "category": "Energy"
   },
   {
     "num": 63,
     "name": "ユキワラシ",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_63_R_JP_SM.png"
+    "rarity": null,
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/063/high.png",
+    "illustrator": "Narumi Sato",
+    "category": "Pokemon"
   },
   {
     "num": 64,
     "name": "タマンタ",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_64_R_JP_SM.png"
+    "rarity": null,
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/064/high.png",
+    "illustrator": "rika",
+    "category": "Pokemon"
   },
   {
     "num": 65,
     "name": "プラスル",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_65_R_JP_SM.png"
+    "rarity": null,
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/065/high.png",
+    "illustrator": "OKACHEKE",
+    "category": "Pokemon"
   },
   {
     "num": 66,
     "name": "マイナン",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_66_R_JP_SM.png"
+    "rarity": null,
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/066/high.png",
+    "illustrator": "OKACHEKE",
+    "category": "Pokemon"
   },
   {
     "num": 67,
     "name": "バチュル",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_67_R_JP_SM.png"
+    "rarity": null,
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/067/high.png",
+    "illustrator": "Atsushi Furusawa",
+    "category": "Pokemon"
   },
   {
     "num": 68,
     "name": "コレクレー",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_68_R_JP_SM.png"
+    "rarity": null,
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/068/high.png",
+    "illustrator": "Akira Komayama",
+    "category": "Pokemon"
   },
   {
     "num": 69,
     "name": "グラードン",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_69_R_JP_SM.png"
+    "rarity": null,
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/069/high.png",
+    "illustrator": "Nurikabe",
+    "category": "Pokemon"
   },
   {
     "num": 70,
     "name": "メテノ",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_70_R_JP_SM.png"
+    "rarity": null,
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/070/high.png",
+    "illustrator": "0313",
+    "category": "Pokemon"
   },
   {
     "num": 71,
     "name": "イベルタル",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_71_R_JP_SM.png"
+    "rarity": null,
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/071/high.png",
+    "illustrator": "Masako Tomii",
+    "category": "Pokemon"
   },
   {
     "num": 72,
     "name": "ナットレイ",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_72_R_JP_SM.png"
+    "rarity": null,
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/072/high.png",
+    "illustrator": "Kurata So",
+    "category": "Pokemon"
   },
   {
     "num": 73,
     "name": "ギルガルド",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_73_R_JP_SM.png"
+    "rarity": null,
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/073/high.png",
+    "illustrator": "Takumi Wada",
+    "category": "Pokemon"
   },
   {
     "num": 74,
     "name": "モトトカゲ",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_74_R_JP_SM.png"
+    "rarity": null,
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/074/high.png",
+    "illustrator": "Mina Nakai",
+    "category": "Pokemon"
   },
   {
     "num": 75,
     "name": "ユキメノコex",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_75_R_JP_SM.png"
+    "rarity": null,
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/075/high.png",
+    "illustrator": "5ban Graphics",
+    "category": "Pokemon"
   },
   {
     "num": 76,
     "name": "ガブリアスex",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_76_R_JP_SM.png"
+    "rarity": null,
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/076/high.png",
+    "illustrator": "5ban Graphics",
+    "category": "Pokemon"
   },
   {
     "num": 77,
     "name": "カプ・コケコex",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_77_R_JP_SM.png"
+    "rarity": null,
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/077/high.png",
+    "illustrator": "PLANETA Igarashi",
+    "category": "Pokemon"
   },
   {
     "num": 78,
     "name": "フーパex",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_78_R_JP_SM.png"
+    "rarity": null,
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/078/high.png",
+    "illustrator": "5ban Graphics",
+    "category": "Pokemon"
   },
   {
     "num": 79,
     "name": "サーフゴーex",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_79_R_JP_SM.png"
+    "rarity": null,
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/079/high.png",
+    "illustrator": "takuyoa",
+    "category": "Pokemon"
   },
   {
     "num": 80,
     "name": "オトシドリex",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_80_R_JP_SM.png"
+    "rarity": null,
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/080/high.png",
+    "illustrator": "PLANETA Mochizuki",
+    "category": "Pokemon"
   },
   {
     "num": 81,
     "name": "アオキ",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_81_R_JP_SM.png"
+    "rarity": null,
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/081/high.png",
+    "illustrator": "Akira Komayama",
+    "category": "Trainer"
   },
   {
     "num": 82,
     "name": "シキミ",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_82_R_JP_SM.png"
+    "rarity": null,
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/082/high.png",
+    "illustrator": "En Morikura",
+    "category": "Trainer"
   },
   {
     "num": 83,
     "name": "チリ",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_83_R_JP_SM.png"
+    "rarity": null,
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/083/high.png",
+    "illustrator": "GIDORA",
+    "category": "Trainer"
   },
   {
     "num": 84,
     "name": "パラソルおねえさん",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_84_R_JP_SM.png"
+    "rarity": null,
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/084/high.png",
+    "illustrator": "Cona Nitanda",
+    "category": "Trainer"
   },
   {
     "num": 85,
     "name": "ガブリアスex",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_85_R_JP_SM.png"
+    "rarity": null,
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/085/high.png",
+    "illustrator": "Oswaldo KATO",
+    "category": "Pokemon"
   },
   {
     "num": 86,
     "name": "カプ・コケコex",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_86_R_JP_SM.png"
+    "rarity": null,
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/086/high.png",
+    "illustrator": "Jerky",
+    "category": "Pokemon"
   },
   {
     "num": 87,
     "name": "サーフゴーex",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_87_R_JP_SM.png"
+    "rarity": null,
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/087/high.png",
+    "illustrator": "Akira Komayama",
+    "category": "Pokemon"
   },
   {
     "num": 88,
     "name": "チリ",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_88_R_JP_SM.png"
+    "rarity": null,
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/088/high.png",
+    "illustrator": "kantaro",
+    "category": "Trainer"
   },
   {
     "num": 89,
     "name": "パラソルおねえさん",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_89_R_JP_SM.png"
+    "rarity": null,
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/089/high.png",
+    "illustrator": "En Morikura",
+    "category": "Trainer"
   },
   {
     "num": 90,
     "name": "ガブリアスex",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_90_R_JP_SM.png"
+    "rarity": null,
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/090/high.png",
+    "illustrator": "5ban Graphics",
+    "category": "Pokemon"
   },
   {
     "num": 91,
     "name": "ビーチコート",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_91_R_JP_SM.png"
+    "rarity": null,
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/091/high.png",
+    "illustrator": "Oswaldo KATO",
+    "category": "Trainer"
   },
   {
     "num": 92,
     "name": "リバーサルエネルギー",
-    "rarity": "R",
-    "imageUrl": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV3a/SV3a_92_R_JP_SM.png"
+    "rarity": null,
+    "imageUrl": "https://assets.tcgdex.net/ja/SV/SV3a/092/high.png",
+    "illustrator": null,
+    "category": "Energy"
   }
 ]

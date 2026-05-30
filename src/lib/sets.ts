@@ -2,8 +2,34 @@ import fs from "node:fs";
 import path from "node:path";
 import { SET_EXTRAS, type SetMetaExtra, JPY_TO_KRW, PSA10_MULTIPLIER, RAW_PRICE_BY_RARITY } from "@/data/setExtras";
 import boxImagesJson from "@/data/boxImages.json";
+import printedTotalsJson from "@/data/printedTotals.json";
 
 const boxImages = boxImagesJson as Record<string, string>;
+const printedTotals = printedTotalsJson as Record<string, number>;
+
+// tcgdex 영문 rarity → 일본 코드
+const RARITY_NORMALIZE: Record<string, string> = {
+  "C": "C", "U": "U", "R": "R",
+  "Double rare": "RR",
+  "Illustration rare": "AR",
+  "Special illustration rare": "SIR",
+  "Black White Rare": "BWR",
+  "UR": "UR", "SAR": "SAR", "SR": "SR", "AR": "AR", "MA": "MA",
+  "MUR": "MUR", "HR": "HR", "CHR": "CHR", "CSR": "CSR", "RRR": "RRR", "SIR": "SIR",
+};
+
+function normalizeRarity(r: string | null | undefined, num: number, setCode: string): string | null {
+  if (r && RARITY_NORMALIZE[r]) return RARITY_NORMALIZE[r];
+  if (r === "None" || r === null || r === undefined) {
+    // 번호가 printed total 초과 = 시크릿
+    const total = printedTotals[setCode] ?? 0;
+    if (total > 0 && num > total) {
+      return "SAR"; // 시크릿 통칭 — 정확한 분류는 추후 보강
+    }
+    return null;
+  }
+  return r;
+}
 
 export type SetIndexEntry = {
   code: string;
@@ -38,7 +64,11 @@ export function getAllSets(): SetIndexEntry[] {
 export function getSetCards(code: string): CardEntry[] {
   const file = path.join(DATA_DIR, "cards", `${code}.json`);
   if (!fs.existsSync(file)) return [];
-  return JSON.parse(fs.readFileSync(file, "utf-8"));
+  const raw = JSON.parse(fs.readFileSync(file, "utf-8")) as CardEntry[];
+  return raw.map((c) => ({
+    ...c,
+    rarity: normalizeRarity(c.rarity, typeof c.num === "number" ? c.num : 0, code),
+  }));
 }
 
 export function getSetMeta(code: string): SetIndexEntry | null {
@@ -50,7 +80,7 @@ export function getSetExtra(code: string): SetMetaExtra | undefined {
 }
 
 const RARITY_RANK: Record<string, number> = {
-  UR: 100, SAR: 95, SR: 80, AR: 70, MUR: 90, MA: 85,
+  UR: 100, SAR: 95, SR: 80, AR: 70, MUR: 90, MA: 85, BWR: 92,
   RR: 60, RRR: 65, CHR: 75, CSR: 78, HR: 88, SIR: 92,
   R: 30, U: 20, C: 10,
 };

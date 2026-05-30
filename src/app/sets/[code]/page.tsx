@@ -3,10 +3,9 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import {
   getAllSets, getSetCards, getSetMeta, getHitCards,
-  getBoxImage, getSetExtra, mercariUrl,
-  formatKRW, formatJPY,
-  type CardEnriched,
+  getBoxImage, getSetExtra, enrichCard,
 } from "@/lib/sets";
+import CardFilterGrid from "@/components/CardFilterGrid";
 
 export async function generateStaticParams() {
   return getAllSets().map((s) => ({ code: s.code }));
@@ -19,6 +18,7 @@ export default async function SetPage({ params }: { params: Promise<{ code: stri
   const extra = getSetExtra(code);
 
   const all = getSetCards(code);
+  const enriched = all.map(enrichCard);
   const hits = getHitCards(all);
   const boxImg = getBoxImage(code);
 
@@ -28,7 +28,7 @@ export default async function SetPage({ params }: { params: Promise<{ code: stri
         ← 전체 팩
       </Link>
 
-      {/* Header */}
+      {/* Header — Pack House 정보 박스 스타일 차용 */}
       <header className="mb-14 grid sm:grid-cols-[280px_1fr] gap-8 items-center">
         <div className="bg-gradient-to-br from-white/5 to-black/30 rounded-2xl p-6 aspect-[5/4] flex items-center justify-center border border-white/5">
           {boxImg ? (
@@ -90,72 +90,12 @@ export default async function SetPage({ params }: { params: Promise<{ code: stri
         </div>
       </header>
 
-      {/* 힛카드 */}
-      {hits.length > 0 ? (
-        <section>
-          <h2 className="text-[20px] sm:text-[24px] font-black mb-1">
-            <span className="text-[var(--accent)]">★</span> 힛카드 <span className="text-white/40 font-normal text-[16px]">({hits.length})</span>
-          </h2>
-          <p className="text-[12px] text-white/40 mb-6">가격은 PSA10 등급 추정 · 클릭하면 Mercari 일본 실거래로 이동</p>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-5">
-            {hits.map((c) => (
-              <HitCardTile key={c.num} setCode={meta.code} card={c} />
-            ))}
-          </div>
-        </section>
-      ) : (
-        <div className="text-center py-20 text-white/40">
-          힛카드 데이터 없음
-        </div>
-      )}
+      {/* 카드 그리드 (필터 + 정렬) */}
+      <section>
+        <h2 className="text-[20px] sm:text-[24px] font-black mb-1">카드</h2>
+        <p className="text-[12px] text-white/40 mb-6">PSA10 추정가 · 클릭 → Mercari 일본 실거래</p>
+        <CardFilterGrid setCode={meta.code} cards={enriched} />
+      </section>
     </main>
-  );
-}
-
-function HitCardTile({ setCode, card }: { setCode: string; card: CardEnriched }) {
-  const src = card.imageUrl || "";
-  const isTopTier = card.rank >= 85;
-
-  return (
-    <a
-      href={mercariUrl(setCode, card.name, card.num, true)}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="card-hover block bg-[var(--bg-elev)] rounded-xl overflow-hidden border border-white/5 group"
-    >
-      <div className="relative aspect-[5/7] bg-black/40 overflow-hidden">
-        {src ? (
-          <Image
-            src={src}
-            alt={card.name || `#${card.num}`}
-            fill
-            sizes="(max-width: 640px) 50vw, 20vw"
-            className="object-contain p-1.5 group-hover:scale-105 transition-transform duration-500"
-            unoptimized
-          />
-        ) : (
-          <div className="absolute inset-0 flex items-center justify-center text-white/20 text-[11px]">no image</div>
-        )}
-        {card.rarity && (
-          <span
-            className="absolute top-2 right-2 text-[10px] font-black px-2 py-0.5 rounded text-black tracking-wider"
-            style={{ background: isTopTier ? "var(--accent-2)" : "var(--accent)" }}
-          >
-            {card.rarity}
-          </span>
-        )}
-      </div>
-      <div className="p-3">
-        <div className="text-[10px] text-white/30 mb-0.5">#{card.num}</div>
-        <div className="text-[13px] font-bold truncate mb-2">{card.name || "—"}</div>
-
-        {/* PSA10 가격 */}
-        <div className="bg-white/5 rounded-lg px-2.5 py-2">
-          <div className="text-[9px] text-white/30 tracking-wider mb-0.5">PSA10 추정가</div>
-          <div className="text-[15px] font-black leading-tight">{formatKRW(card.psa10KRW)}</div>
-          <div className="text-[11px] text-white/50">{formatJPY(card.psa10JPY)}</div>
-        </div>
-      </div>
-    </a>
   );
 }
