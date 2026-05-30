@@ -2,23 +2,23 @@
 // 실거래는 카드 클릭 → Mercari/번개장터에서 확인.
 
 export const JP_RAW_PRICE_BY_RARITY: Record<string, number> = {
-  // 뻥튀기 — 시크릿/하이엔드 화끈하게
-  UR:   45000,
-  SAR:  85000,
-  MUR:  120000,
-  MA:   38000,
-  HR:   55000,
-  SIR:  65000,
-  BWR:  90000,
-  SR:   18000,
-  CSR:  22000,
-  CHR:  15000,
-  AR:    8500,
-  RRR:   5500,
-  RR:    2800,
-  R:      800,
-  U:      200,
-  C:      100,
+  // 뻥튀기 — 현실적 시세 (PSA10이 아닌 raw)
+  UR:    4500,
+  SAR:   8500,
+  MUR:  12000,
+  MA:    3800,
+  HR:    5500,
+  SIR:   6500,
+  BWR:   9000,
+  SR:    1800,
+  CSR:   2200,
+  CHR:   1500,
+  AR:     850,
+  RRR:    550,
+  RR:     280,
+  R:       80,
+  U:       20,
+  C:       10,
 };
 
 export const PSA10_MULT: Record<string, number> = {

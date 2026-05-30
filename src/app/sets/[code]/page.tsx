@@ -82,18 +82,18 @@ export default async function SetPage({ params, searchParams }: { params: Promis
 
           <div className="grid grid-cols-2 gap-3 max-w-[440px]">
             <div className="bg-[var(--bg-elev)] rounded-xl px-4 py-3 border border-white/5">
-              <div className="text-[11px] text-white/40 mb-1">1팩 정가</div>
+              <div className="text-[11px] text-white/40 mb-1">1팩 <span className="text-[var(--accent)] font-bold">리셀가</span></div>
               <div className="text-[18px] font-black">
                 {extra?.packPriceKR ? `₩${extra.packPriceKR.toLocaleString()}` : <span className="text-white/30">—</span>}
               </div>
-              <div className="text-[12px] text-white/40">¥{extra?.packPriceJPY ?? "?"}</div>
+              <div className="text-[12px] text-white/40">¥{extra?.packPriceJPY ?? "?"} <span className="text-white/25">· 정가 ₩{extra?.msrpPackKR?.toLocaleString() ?? "—"}</span></div>
             </div>
             <div className="bg-[var(--bg-elev)] rounded-xl px-4 py-3 border border-white/5">
-              <div className="text-[11px] text-white/40 mb-1">1박스 정가</div>
+              <div className="text-[11px] text-white/40 mb-1">1박스 <span className="text-[var(--accent)] font-bold">리셀가</span></div>
               <div className="text-[18px] font-black">
                 {extra?.boxPriceKR ? `₩${extra.boxPriceKR.toLocaleString()}` : <span className="text-white/30">—</span>}
               </div>
-              <div className="text-[12px] text-white/40">¥{extra?.boxPriceJPY.toLocaleString() ?? "?"}</div>
+              <div className="text-[12px] text-white/40">¥{extra?.boxPriceJPY.toLocaleString() ?? "?"} <span className="text-white/25">· 정가 ₩{extra?.msrpBoxKR?.toLocaleString() ?? "—"}</span></div>
             </div>
           </div>
 
