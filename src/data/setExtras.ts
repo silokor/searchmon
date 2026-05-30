@@ -153,7 +153,7 @@ export const SET_EXTRAS: Record<string, SetMetaExtra> = {
   SV9a: {
     code: "SV9a", releasedKR: true,
     packPriceKR: 4500, boxPriceKR: 135000, msrpPackKR: 2200, msrpBoxKR: 66000, releaseKR: "2025-07-25",
-    nameKR_full: "히트웨이브 아레나",
+    nameKR_full: "열풍의 아레나",
     packPriceJPY: 570, boxPriceJPY: 17000, msrpPackJPY: 180, msrpBoxJPY: 5400, releaseJP: "2025-03-14",
   },
   SV10: {

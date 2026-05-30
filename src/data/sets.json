@@ -1,16 +1,16 @@
 [
   {
     "code": "SV1V",
-    "name_ja": "ポケモンカード151以前 SV1V スカーレットex",
+    "name_ja": "SV1V スカーレットex",
     "name_ko": "스칼렛 ex",
-    "name_full": "Violet ex (SV1V)",
+    "name_full": "Scarlet ex (SV1V)",
     "cardCount": 108
   },
   {
     "code": "SV1S",
     "name_ja": "SV1S バイオレットex",
     "name_ko": "바이올렛 ex",
-    "name_full": "Scarlet ex (SV1S)",
+    "name_full": "Violet ex (SV1S)",
     "cardCount": 108
   },
   {
@@ -23,7 +23,7 @@
   {
     "code": "SV2D",
     "name_ja": "SV2D クレイバースト",
-    "name_ko": "클레이버스트",
+    "name_ko": "클레이 버스트",
     "name_full": "Clay Burst (SV2D)",
     "cardCount": 99
   },
@@ -37,7 +37,7 @@
   {
     "code": "SV2a",
     "name_ja": "SV2a ポケモンカード151",
-    "name_ko": "포켓몬 151",
+    "name_ko": "포켓몬 카드 151",
     "name_full": "Pokémon Card 151 (SV2a)",
     "cardCount": 210
   },
@@ -122,7 +122,7 @@
     "code": "SV7a",
     "name_ja": "SV7a パラダイムトリガー",
     "name_ko": "패러다임 트리거",
-    "name_full": "Paradise Dragona (SV7a)",
+    "name_full": "Paradigm Trigger (SV7a)",
     "cardCount": 94
   },
   {
@@ -134,9 +134,9 @@
   },
   {
     "code": "SV8a",
-    "name_ja": "SV8a テラスタルフェスティバル",
+    "name_ja": "SV8a テラスタルフェスティバルex",
     "name_ko": "테라스탈 페스티벌 ex",
-    "name_full": "Terastal Fest ex (SV8a)",
+    "name_full": "Terastal Festival ex (SV8a)",
     "cardCount": 237
   },
   {
@@ -149,7 +149,7 @@
   {
     "code": "SV9a",
     "name_ja": "SV9a ヒートウェイブアリーナ",
-    "name_ko": "히트웨이브 아레나",
+    "name_ko": "열풍의 아레나",
     "name_full": "Heat Wave Arena (SV9a)",
     "cardCount": 92
   },
@@ -164,14 +164,14 @@
     "code": "SV11W",
     "name_ja": "SV11W メガホワイトex",
     "name_ko": "메가 화이트 ex",
-    "name_full": "White Flare (SV11W)",
+    "name_full": "Mega White ex (SV11W)",
     "cardCount": 174
   },
   {
     "code": "SV11B",
     "name_ja": "SV11B メガブラックex",
     "name_ko": "메가 블랙 ex",
-    "name_full": "Black Bolt (SV11B)",
+    "name_full": "Mega Black ex (SV11B)",
     "cardCount": 174
   }
 ]

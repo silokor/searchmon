@@ -72,7 +72,7 @@ export default async function SetPage({ params, searchParams }: { params: Promis
           <h1 className="text-[28px] sm:text-[40px] font-black leading-tight mb-1">
             {extra?.nameKR_full || meta.name_ko}
           </h1>
-          <p className="text-[14px] sm:text-[16px] text-white/50 mb-5">{meta.name_ja}</p>
+          <p className="text-[14px] sm:text-[16px] text-white/50 mb-5">{meta.name_full || meta.name_ja}</p>
 
           {!hasKR && (
             <div className="inline-block mb-4 px-3 py-1.5 rounded-full bg-yellow-500/15 text-yellow-300 text-[12px] font-bold border border-yellow-500/30">
