@@ -111,24 +111,31 @@ export function toKoreanCardName(jpName: string | null): string | null {
   return null;
 }
 
-// === Mercari (일판) ===
+// === Mercari (일판) === 일본어로 검색
 export function mercariUrl(setCode: string, cardName: string | null, num: number | string, psa10 = true): string {
   const q = [cardName || "", setCode, `${num}`, psa10 ? "PSA10" : ""].filter(Boolean).join(" ");
   return `https://jp.mercari.com/search?keyword=${encodeURIComponent(q)}`;
 }
 
-// === 한판 시세: 번개장터 (한글로 검색) ===
+// === 번개장터 (한판) === 한글로: "포켓몬카드 [팩명] [카드명] 한판"
 export function bungaeUrl(koName: string | null, jpName: string | null, num: number | string, setNameKR?: string): string {
-  // 한글명 우선, 없으면 일본명 (그대로 검색해도 결과 나올 수 있음)
   const cardKw = koName || jpName || "";
-  const q = ["포켓몬", "한판", setNameKR || "", cardKw, "PSA10"].filter(Boolean).join(" ");
+  const q = ["포켓몬카드", setNameKR || "", cardKw, "한판"].filter(Boolean).join(" ");
+  return `https://m.bunjang.co.kr/search/products?q=${encodeURIComponent(q)}`;
+}
+
+// === 번개장터 (일판) === 한글로: "포켓몬카드 [팩명] [카드명] 일판"
+export function bungaeJPUrl(koName: string | null, jpName: string | null, num: number | string, setNameKR?: string): string {
+  // 한글 매핑 있으면 한글, 없으면 일본명
+  const cardKw = koName || jpName || "";
+  const q = ["포켓몬카드", setNameKR || "", cardKw, "일판"].filter(Boolean).join(" ");
   return `https://m.bunjang.co.kr/search/products?q=${encodeURIComponent(q)}`;
 }
 
 // === 한판 시세 보조: 네이버 쇼핑 ===
 export function naverShopUrl(koName: string | null, jpName: string | null, setNameKR?: string): string {
   const cardKw = koName || jpName || "";
-  const q = ["포켓몬", "한판", setNameKR || "", cardKw, "PSA10"].filter(Boolean).join(" ");
+  const q = ["포켓몬카드", setNameKR || "", cardKw, "한판"].filter(Boolean).join(" ");
   return `https://search.shopping.naver.com/search/all?query=${encodeURIComponent(q)}`;
 }
 

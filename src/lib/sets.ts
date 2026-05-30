@@ -6,7 +6,7 @@ import boxImagesJson from "@/data/boxImages.json";
 import printedTotalsJson from "@/data/printedTotals.json";
 import {
   type CardEntry, type CardEnriched, type SetIndexEntry, type Edition,
-  mercariUrl, bungaeUrl, toKoreanCardName,
+  bungaeUrl, bungaeJPUrl, toKoreanCardName,
 } from "@/lib/types";
 
 const boxImages = boxImagesJson as Record<string, string>;
@@ -98,7 +98,7 @@ export function enrichCards(setCode: string, cards: CardEntry[], releasedKR: boo
       ...price,
       koreanName: koName,
       displayName: `[일판] ${baseName}`,
-      marketUrl: mercariUrl(setCode, c.name, num, true),
+      marketUrl: bungaeJPUrl(koName, c.name, num, setNameKR),
     });
 
     // [한판] 카드 — 한국 발매된 세트에 한해

@@ -110,7 +110,7 @@ export default async function SetPage({ params, searchParams }: { params: Promis
       <section>
         <h2 className="text-[20px] sm:text-[24px] font-black mb-1">카드</h2>
         <p className="text-[12px] text-white/40 mb-6">
-          PSA10 추정가 · <span className="text-[#FFD400]">[일판]</span>=Mercari 일본 / <span className="text-[#5BC0FF]">[한판]</span>=번개장터
+          PSA10 추정가 · <span className="text-[#FFD400]">[일판]</span>·<span className="text-[#5BC0FF]">[한판]</span> 모두 번개장터 검색
         </p>
         <CardFilterGrid cards={enriched} hasKR={showJPKRFilter} />
       </section>

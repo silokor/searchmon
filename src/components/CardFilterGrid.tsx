@@ -154,7 +154,7 @@ function CardTile({ card: c }: { card: CardEnriched }) {
       rel="noopener noreferrer"
       className="card-hover block bg-[var(--bg-elev)] rounded-xl overflow-hidden border border-white/5 group"
     >
-      <div className="relative aspect-[5/7] bg-black/40 overflow-hidden">
+      <div className="relative aspect-[3/4] bg-black/40 overflow-hidden">
         {c.imageUrl ? (
           <Image
             src={c.imageUrl}
