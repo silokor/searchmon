@@ -4,38 +4,43 @@ import Link from "next/link";
 import Image from "next/image";
 import type { SetIndexEntry } from "@/lib/types";
 
-type Props = {
-  sets: (SetIndexEntry & {
-    hitCount: number;
-    boxImage: string | null;
-    packPriceKR?: number;
-    boxPriceKR?: number;
-    packPriceJPY: number;
-    boxPriceJPY: number;
-    releasedKR: boolean;
-    releaseJP: string;
-    nameKR_full?: string;
-  })[];
+export type SetCardItem = SetIndexEntry & {
+  edition: "JP" | "KR";
+  hitCount: number;
+  boxImage: string | null;
+  packPriceKR?: number;
+  boxPriceKR?: number;
+  packPriceJPY: number;
+  boxPriceJPY: number;
+  releasedKR: boolean;
+  releaseJP: string;
+  releaseKR?: string;
+  nameKR_full?: string;
 };
 
-export default function SearchableGrid({ sets }: Props) {
+export default function SearchableGrid({ sets }: { sets: SetCardItem[] }) {
   const [q, setQ] = useState("");
+  const [edition, setEdition] = useState<"all" | "JP" | "KR">("all");
 
   const filtered = useMemo(() => {
+    let r = sets;
+    if (edition !== "all") r = r.filter(s => s.edition === edition);
     const k = q.trim().toLowerCase();
-    if (!k) return sets;
-    return sets.filter((s) =>
-      s.code.toLowerCase().includes(k) ||
-      s.name_ko.toLowerCase().includes(k) ||
-      s.name_ja.toLowerCase().includes(k) ||
-      (s.nameKR_full?.toLowerCase().includes(k) ?? false) ||
-      (s.name_full?.toLowerCase().includes(k) ?? false)
-    );
-  }, [sets, q]);
+    if (k) {
+      r = r.filter(s =>
+        s.code.toLowerCase().includes(k) ||
+        s.name_ko.toLowerCase().includes(k) ||
+        s.name_ja.toLowerCase().includes(k) ||
+        (s.nameKR_full?.toLowerCase().includes(k) ?? false) ||
+        (s.name_full?.toLowerCase().includes(k) ?? false)
+      );
+    }
+    return r;
+  }, [sets, q, edition]);
 
   return (
     <>
-      <div className="mb-8 relative">
+      <div className="mb-4 relative">
         <input
           value={q}
           onChange={(e) => setQ(e.target.value)}
@@ -46,95 +51,115 @@ export default function SearchableGrid({ sets }: Props) {
           <button
             onClick={() => setQ("")}
             className="absolute right-4 top-1/2 -translate-y-1/2 text-white/40 hover:text-white text-[13px]"
-          >
-            ✕
-          </button>
+          >✕</button>
         )}
       </div>
 
-      <div className="flex justify-between items-baseline mb-6 text-[13px] text-white/40">
-        <div>
-          <span className="text-white/90 font-bold text-[18px]">{filtered.length}</span> 팩
-          <span className="mx-2">·</span>
-          <span className="text-white/90 font-bold text-[18px]">{filtered.reduce((a, s) => a + s.hitCount, 0)}</span> 힛카드
-        </div>
-        {q && <div>"{q}" 검색</div>}
+      <div className="mb-6 flex flex-wrap items-center gap-2">
+        <Chip active={edition === "all"} onClick={() => setEdition("all")}>전체 {sets.length}</Chip>
+        <Chip active={edition === "JP"} onClick={() => setEdition("JP")} color="#FFD400">🇯🇵 일판 {sets.filter(s=>s.edition==="JP").length}</Chip>
+        <Chip active={edition === "KR"} onClick={() => setEdition("KR")} color="#5BC0FF">🇰🇷 한판 {sets.filter(s=>s.edition==="KR").length}</Chip>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-5">
-        {filtered.map((s) => (
-          <Link
-            key={s.code}
-            href={`/sets/${s.code}`}
-            className="card-hover group block bg-[var(--bg-elev)] rounded-2xl overflow-hidden border border-white/5"
-          >
-            <div className="relative aspect-[5/4] bg-gradient-to-br from-white/5 to-black/30 flex items-center justify-center p-5">
-              {s.boxImage ? (
-                <Image
-                  src={s.boxImage}
-                  alt={s.name_ko}
-                  width={200}
-                  height={200}
-                  className="w-auto max-h-[90%] max-w-[80%] object-contain drop-shadow-[0_10px_30px_rgba(0,0,0,0.7)]"
-                  unoptimized
-                />
-              ) : (
-                <Image
-                  src={`/images/sets/${s.code}.png`}
-                  alt={s.name_ko}
-                  width={200}
-                  height={100}
-                  className="w-auto max-h-[60%] max-w-[80%] object-contain opacity-80"
-                  unoptimized
-                />
-              )}
-              {!s.releasedKR && (
-                <span className="absolute top-3 right-3 text-[10px] font-bold px-2 py-1 rounded-full bg-yellow-500/20 text-yellow-300 border border-yellow-500/30">
-                  KR 미발매
-                </span>
-              )}
-            </div>
-            <div className="p-4 border-t border-white/5">
-              <div className="text-[11px] text-white/30 tracking-widest mb-1">{s.code}</div>
-              <div className="text-[15px] font-bold leading-snug mb-2">{s.nameKR_full || s.name_ko}</div>
-              <div className="text-[11px] text-white/40 mb-3">{s.name_ja.replace(/^SV\d+[a-zA-Z]*\s*/, "")}</div>
+      <div className="mb-4 text-[13px] text-white/40">
+        <span className="text-white/90 font-bold text-[16px]">{filtered.length}</span> 상품
+        <span className="mx-2">·</span>
+        <span className="text-[var(--accent)] font-bold">★ {filtered.reduce((a, s) => a + s.hitCount, 0)}</span> 힛카드
+        {q && <span className="ml-2">· "{q}"</span>}
+      </div>
 
-              {/* 가격 */}
-              <div className="grid grid-cols-2 gap-2 text-[11px]">
-                <div className="bg-white/5 rounded-lg px-2.5 py-2">
-                  <div className="text-white/30 mb-0.5">팩 (1팩)</div>
-                  {s.packPriceKR ? (
-                    <div className="text-white font-bold">₩{s.packPriceKR.toLocaleString()}</div>
-                  ) : (
-                    <div className="text-white/40">—</div>
-                  )}
-                  <div className="text-white/40">¥{s.packPriceJPY}</div>
-                </div>
-                <div className="bg-white/5 rounded-lg px-2.5 py-2">
-                  <div className="text-white/30 mb-0.5">박스 (30팩)</div>
-                  {s.boxPriceKR ? (
-                    <div className="text-white font-bold">₩{s.boxPriceKR.toLocaleString()}</div>
-                  ) : (
-                    <div className="text-white/40">—</div>
-                  )}
-                  <div className="text-white/40">¥{s.boxPriceJPY.toLocaleString()}</div>
-                </div>
-              </div>
-
-              <div className="mt-3 flex items-center gap-2 text-[10px] text-white/30">
-                <span className="text-[var(--accent)]">★ {s.hitCount}</span>
-                <span>· 발매 {s.releaseJP}</span>
-              </div>
-            </div>
-          </Link>
-        ))}
+      {/* 박스 그리드 — 더 작게, 한 줄에 많이 */}
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3 sm:gap-4">
+        {filtered.map((s) => <SetTile key={`${s.code}-${s.edition}`} item={s} />)}
       </div>
 
       {filtered.length === 0 && (
-        <div className="text-center py-20 text-white/40 text-[14px]">
-          검색 결과 없음
-        </div>
+        <div className="text-center py-20 text-white/40 text-[14px]">검색 결과 없음</div>
       )}
     </>
+  );
+}
+
+function Chip({ active, onClick, children, color }: { active: boolean; onClick: () => void; children: React.ReactNode; color?: string }) {
+  return (
+    <button
+      onClick={onClick}
+      className={`px-3 py-1.5 rounded-full text-[12px] font-bold transition-colors ${active ? "text-black" : "bg-white/5 text-white/60 hover:bg-white/10"}`}
+      style={active ? { background: color || "var(--accent)" } : undefined}
+    >
+      {children}
+    </button>
+  );
+}
+
+function SetTile({ item: s }: { item: SetCardItem }) {
+  const isJP = s.edition === "JP";
+  const editionLabel = isJP ? "일판" : "한판";
+  const editionColor = isJP ? "#FFD400" : "#5BC0FF";
+  const packPrice = isJP ? s.packPriceJPY : s.packPriceKR;
+  const boxPrice  = isJP ? s.boxPriceJPY  : s.boxPriceKR;
+  const releaseDate = isJP ? s.releaseJP : s.releaseKR;
+
+  return (
+    <Link
+      href={`/sets/${s.code}?edition=${s.edition}`}
+      className="card-hover group block bg-[var(--bg-elev)] rounded-xl overflow-hidden border border-white/5"
+    >
+      <div className="relative aspect-square bg-gradient-to-br from-white/5 to-black/40 flex items-center justify-center p-3">
+        {s.boxImage ? (
+          <Image
+            src={s.boxImage}
+            alt={s.name_ko}
+            width={180}
+            height={180}
+            className="w-auto max-h-[85%] max-w-[85%] object-contain drop-shadow-[0_8px_20px_rgba(0,0,0,0.7)]"
+            unoptimized
+          />
+        ) : (
+          <Image
+            src={`/images/sets/${s.code}.png`}
+            alt={s.name_ko}
+            width={160}
+            height={80}
+            className="w-auto max-h-[60%] object-contain opacity-60"
+            unoptimized
+          />
+        )}
+        {/* 에디션 뱃지 */}
+        <span
+          className="absolute top-2 left-2 text-[9px] font-black px-1.5 py-0.5 rounded text-black tracking-wider"
+          style={{ background: editionColor }}
+        >
+          {editionLabel}
+        </span>
+      </div>
+      <div className="p-2.5 sm:p-3 border-t border-white/5">
+        <div className="text-[10px] text-white/30 tracking-widest mb-0.5">{s.code}</div>
+        <div className="text-[12px] sm:text-[13px] font-bold leading-tight mb-1 line-clamp-2 min-h-[28px]">
+          <span style={{ color: editionColor }}>[{editionLabel}]</span> {s.nameKR_full || s.name_ko}
+        </div>
+
+        {/* 가격 (작게) */}
+        <div className="bg-white/5 rounded-md px-2 py-1.5 mt-1.5">
+          <div className="flex items-center justify-between text-[10px]">
+            <span className="text-white/40">1팩</span>
+            <span className="text-white font-bold">
+              {packPrice ? (isJP ? `¥${packPrice.toLocaleString()}` : `₩${packPrice.toLocaleString()}`) : "—"}
+            </span>
+          </div>
+          <div className="flex items-center justify-between text-[10px] mt-0.5">
+            <span className="text-white/40">1박스</span>
+            <span className="text-white font-bold">
+              {boxPrice ? (isJP ? `¥${boxPrice.toLocaleString()}` : `₩${boxPrice.toLocaleString()}`) : "—"}
+            </span>
+          </div>
+        </div>
+
+        <div className="mt-1.5 flex items-center justify-between text-[10px] text-white/30">
+          <span className="text-[var(--accent)]">★ {s.hitCount}</span>
+          <span>{releaseDate || "—"}</span>
+        </div>
+      </div>
+    </Link>
   );
 }

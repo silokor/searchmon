@@ -11,17 +11,23 @@ export async function generateStaticParams() {
   return getAllSets().map((s) => ({ code: s.code }));
 }
 
-export default async function SetPage({ params }: { params: Promise<{ code: string }> }) {
+export default async function SetPage({ params, searchParams }: { params: Promise<{ code: string }>; searchParams: Promise<{ edition?: string }> }) {
   const { code } = await params;
+  const sp = await searchParams;
+  const editionParam = sp.edition === "KR" || sp.edition === "JP" ? sp.edition : null;
   const meta = getSetMeta(code);
   if (!meta) notFound();
   const extra = getSetExtra(code);
 
-  const enriched = getEnrichedCards(code);
+  let enriched = getEnrichedCards(code);
+  // edition 쿼리가 있으면 해당 에디션만
+  if (editionParam) enriched = enriched.filter(c => c.edition === editionParam);
   const hits = getHitCards(enriched);
   const boxImg = getBoxImage(code);
   const totalUniqueCards = new Set(enriched.map(c => c.num)).size;
   const hasKR = extra?.releasedKR ?? false;
+  const showJPKRFilter = !editionParam && hasKR;
+  const focusEdition = editionParam as "JP" | "KR" | null;
 
   return (
     <main className="grain relative max-w-[1280px] mx-auto px-5 sm:px-8 py-10 sm:py-14">
@@ -52,7 +58,17 @@ export default async function SetPage({ params }: { params: Promise<{ code: stri
           )}
         </div>
         <div>
-          <div className="text-[11px] text-white/30 tracking-widest mb-2">{meta.code}</div>
+          <div className="text-[11px] text-white/30 tracking-widest mb-2">
+            {meta.code}
+            {focusEdition && (
+              <span
+                className="ml-2 px-1.5 py-0.5 rounded text-[10px] font-black text-black"
+                style={{ background: focusEdition === "JP" ? "#FFD400" : "#5BC0FF" }}
+              >
+                {focusEdition === "JP" ? "일판" : "한판"}
+              </span>
+            )}
+          </div>
           <h1 className="text-[28px] sm:text-[40px] font-black leading-tight mb-1">
             {extra?.nameKR_full || meta.name_ko}
           </h1>
@@ -96,7 +112,7 @@ export default async function SetPage({ params }: { params: Promise<{ code: stri
         <p className="text-[12px] text-white/40 mb-6">
           PSA10 추정가 · <span className="text-[#FFD400]">[일판]</span>=Mercari 일본 / <span className="text-[#5BC0FF]">[한판]</span>=번개장터
         </p>
-        <CardFilterGrid cards={enriched} hasKR={hasKR} />
+        <CardFilterGrid cards={enriched} hasKR={showJPKRFilter} />
       </section>
     </main>
   );
