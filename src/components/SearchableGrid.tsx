@@ -2,7 +2,7 @@
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import type { SetIndexEntry } from "@/lib/sets";
+import type { SetIndexEntry } from "@/lib/types";
 
 type Props = {
   sets: (SetIndexEntry & {

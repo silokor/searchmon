@@ -1,10 +1,10 @@
-import { getAllSets, getSetCards, getHitCards, getBoxImage, getSetExtra } from "@/lib/sets";
+import { getAllSets, getEnrichedCards, getHitCards, getBoxImage, getSetExtra } from "@/lib/sets";
 import SearchableGrid from "@/components/SearchableGrid";
 
 export default function HomePage() {
   const sets = getAllSets().map((s) => {
-    const cards = getSetCards(s.code);
-    const hits = getHitCards(cards);
+    const enriched = getEnrichedCards(s.code);
+    const hits = getHitCards(enriched);
     const extra = getSetExtra(s.code);
     return {
       ...s,

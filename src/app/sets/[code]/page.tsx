@@ -2,8 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import {
-  getAllSets, getSetCards, getSetMeta, getHitCards,
-  getBoxImage, getSetExtra, enrichCard,
+  getAllSets, getSetMeta, getEnrichedCards, getHitCards,
+  getBoxImage, getSetExtra,
 } from "@/lib/sets";
 import CardFilterGrid from "@/components/CardFilterGrid";
 
@@ -17,10 +17,11 @@ export default async function SetPage({ params }: { params: Promise<{ code: stri
   if (!meta) notFound();
   const extra = getSetExtra(code);
 
-  const all = getSetCards(code);
-  const enriched = all.map(enrichCard);
-  const hits = getHitCards(all);
+  const enriched = getEnrichedCards(code);
+  const hits = getHitCards(enriched);
   const boxImg = getBoxImage(code);
+  const totalUniqueCards = new Set(enriched.map(c => c.num)).size;
+  const hasKR = extra?.releasedKR ?? false;
 
   return (
     <main className="grain relative max-w-[1280px] mx-auto px-5 sm:px-8 py-10 sm:py-14">
@@ -28,7 +29,6 @@ export default async function SetPage({ params }: { params: Promise<{ code: stri
         ← 전체 팩
       </Link>
 
-      {/* Header — Pack House 정보 박스 스타일 차용 */}
       <header className="mb-14 grid sm:grid-cols-[280px_1fr] gap-8 items-center">
         <div className="bg-gradient-to-br from-white/5 to-black/30 rounded-2xl p-6 aspect-[5/4] flex items-center justify-center border border-white/5">
           {boxImg ? (
@@ -58,9 +58,9 @@ export default async function SetPage({ params }: { params: Promise<{ code: stri
           </h1>
           <p className="text-[14px] sm:text-[16px] text-white/50 mb-5">{meta.name_ja}</p>
 
-          {!extra?.releasedKR && (
+          {!hasKR && (
             <div className="inline-block mb-4 px-3 py-1.5 rounded-full bg-yellow-500/15 text-yellow-300 text-[12px] font-bold border border-yellow-500/30">
-              한국 미발매
+              한국 미발매 (일판만)
             </div>
           )}
 
@@ -82,19 +82,21 @@ export default async function SetPage({ params }: { params: Promise<{ code: stri
           </div>
 
           <div className="mt-5 flex flex-wrap gap-x-5 gap-y-1 text-[12px] text-white/40">
-            <div>총 <span className="text-white/80 font-bold">{all.length}</span>장</div>
-            <div className="text-[var(--accent)]">★ 힛카드 <span className="font-bold">{hits.length}</span>장</div>
-            {extra?.releaseJP && <div>일본 발매 {extra.releaseJP}</div>}
-            {extra?.releaseKR && <div>한국 발매 {extra.releaseKR}</div>}
+            <div>고유 카드 <span className="text-white/80 font-bold">{totalUniqueCards}</span>종</div>
+            <div className="text-[var(--accent)]">★ 힛카드 <span className="font-bold">{hits.length}</span>개</div>
+            {hasKR && <div className="text-[#5BC0FF]">한판 발매</div>}
+            {extra?.releaseJP && <div>일본 {extra.releaseJP}</div>}
+            {extra?.releaseKR && <div>한국 {extra.releaseKR}</div>}
           </div>
         </div>
       </header>
 
-      {/* 카드 그리드 (필터 + 정렬) */}
       <section>
         <h2 className="text-[20px] sm:text-[24px] font-black mb-1">카드</h2>
-        <p className="text-[12px] text-white/40 mb-6">PSA10 추정가 · 클릭 → Mercari 일본 실거래</p>
-        <CardFilterGrid setCode={meta.code} cards={enriched} />
+        <p className="text-[12px] text-white/40 mb-6">
+          PSA10 추정가 · <span className="text-[#FFD400]">[일판]</span>=Mercari 일본 / <span className="text-[#5BC0FF]">[한판]</span>=번개장터
+        </p>
+        <CardFilterGrid cards={enriched} hasKR={hasKR} />
       </section>
     </main>
   );
